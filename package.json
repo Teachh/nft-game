@@ -1,0 +1,23 @@
+{
+  "name": "nft-game",
+  "version": "1.0.0",
+  "description": "Basic nft-game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Teachh/nft-game.git"
+  },
+  "author": "Hector Naranjo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Teachh/nft-game/issues"
+  },
+  "homepage": "https://github.com/Teachh/nft-game#readme",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.3.1",
+    "node": "^16.9.1"
+  }
+}
