@@ -23,8 +23,13 @@ contract Token is ERC721, Ownable {
     constructor(string memory name, string memory symbol) ERC721(name, symbol){
 
     }
+    // Details
+    function getTokenDetails(uint256 tokenId) public view returns (Pet memory){
+        return _tokenDetails[tokenId];
+    }
+
     // Pet creation that only the owner can interact with
-    function mint(uint8 damage, uint8 magic, uint8 endurance) public onlyOwner {
+    function mint(uint8 damage, uint8 magic, uint256 endurance) public onlyOwner {
         _tokenDetails[nextId] = Pet(damage, magic, block.timestamp, endurance);
         _safeMint(msg.sender, nextId);
         nextId++;
